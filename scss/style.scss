@@ -12,4 +12,212 @@
 body {
     background:var(--bg-body1);
     font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    background: var(--bg-body2);
+    border-radius: 0px 0px 20px 20px;
+    padding: 3.6rem 2.4rem 8.4rem 2.5rem; 
+
+    &__heading {
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        margin-bottom: 0.4rem;
+    }
+
+    &__paragraph {
+        color: var(--col-par1);
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    &__wrapper {
+        border-top: 1px solid #848BAB;
+        margin-top: 2.4rem;
+        padding-top: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__input {
+        display: none;
+    }
+
+    &__toggle {
+        width: 48px;
+        height: 24px;
+        position: relative;
+        background: #AEB3CB;
+        border-radius: 12px;
+    }
+
+    &__toggle::after {
+        content: '';
+        width: 18px;
+        height: 18px;
+        background: #F1F3FA;
+        border-radius: 100%;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+    }
+}
+
+.main {
+    padding: 0 2.4rem 0 2.5rem;
+    position: relative;
+    top: -44px;
+    text-align: center;
+}
+
+.dashboard {
+
+    &__social-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        margin-bottom: 4.6rem;
+    }
+
+    &__card {
+        padding: 3.2rem 0 2.4rem;
+        background: var(--bg-card);
+        border-radius: 0.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__name-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 3rem;
+    }
+
+    &__user {
+        color: var(--col-par1);
+    }
+
+    &__count {
+        color: var(--col-heading);
+        font-size: 5.6rem;
+        line-height: 4.8rem;
+        letter-spacing: -2px;
+        margin-bottom: 0.9rem;
+    }
+
+    &__followers {
+        color: var(--col-par1);
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        line-height: 1.5rem,;
+        letter-spacing: 5px;
+        font-weight: 400;
+        margin-bottom: 2.5rem;
+    }
+
+    &__current-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    &__number-positive {
+        color: $color-status-positive;
+    }
+
+    &__number-negative {
+        color: $color-status-negative;
+    }
+
+    &__line {
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        top: 0;
+    }
+
+    &__line--facebook {
+        background: $color-facebook;
+    }
+
+    &__line--twitter {
+        background: $color-twitter;
+    }
+
+    &__line--instagram {
+        background: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%);
+    }
+
+    &__line--youtube {
+        background: $color-youtube;
+    }
+
+    &__stats-title {
+        text-align: left;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        color: var(--col-par1);
+        margin-bottom: 2.7rem;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__row:first-child {
+        margin-bottom: 2.1rem;
+    }
+
+    &__card--sm {
+        padding: 2.7rem 3rem 2.4rem 2.4rem;
+    }
+
+    &__stats-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__count--sm {
+        font-size: 3.2rem;
+        line-height: 2.9rem;
+        margin: 0;
+    }
+
+    &__metric-name {
+        color: var(--col-par1);
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+}
+
+.fa-facebook-square {
+    color: $color-facebook;
+}
+
+.fa-twitter {
+    color: $color-twitter;
+}
+
+.fa-instagram {
+    background: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.fa-youtube-square {
+    color: $color-youtube;
+}
+
+.fab {
+    font-size: 2rem;
 }
