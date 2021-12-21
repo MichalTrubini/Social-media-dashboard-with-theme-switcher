@@ -160,4 +160,18 @@ img {
 html {
   font-size: 62.5%;
 }
+
+:root {
+  --bg-body1:#fff;
+  --bg-body2:#F7F9FF;
+  --bg-card:#F1F3FA;
+  --bg-card-hover:#E1E4F0;
+  --col-heading:#1D1F29;
+  --col-par1:#63687D;
+}
+
+body {
+  background: var(--bg-body1);
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
