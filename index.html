@@ -8,75 +8,283 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
 </head>
 <body>
+<header class="header">
+  <h1 class="header__heading">
+    Social Media Dashboard
+  </h1>
+  <p class="header__paragraph">
+    Total Followers: 23,004
+  </p>
+  <div class="header__wrapper">
+    <p class="header__paragraph">
+      Dark Mode
+    </p>
+    <form class="header__form">
+      <input type="radio" class="header__input" required>
+      <div class="header__toggle"></div>
+    </form>
+  </div>
+</header>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+<main class="main dashboard">
+  <div class="dashboard__social-wrapper">
+    <div class="dashboard__card">
+      <div class="dashboard__name-block">
+        <i class="fab fa-facebook-square"></i>
+        <p class="dashboard__user">
+          @nathanf
+        </p>
+      </div>
+      <h2 class="dashboard__count">
+        1987
+      </h2>
+      <p class="dashboard__followers">
+        Followers
+      </p>
+      <div class="dashboard__current-container">
+        <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+        <p class="dashboard__number">
+          12 Today
+        </p>
+      </div>
+    </div>
 
-  Dark Mode
+    <div class="dashboard__card">
+      <div class="dashboard__name-block">
+        <i class="fab fa-twitter"></i>
+        <p class="dashboard__user">
+          @nathanf
+        </p>
+      </div>
+      <h2 class="dashboard__count">
+        1044
+      </h2>
+      <p class="dashboard__followers">
+        Followers
+      </p>
+      <div class="dashboard__current-container">
+        <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+        <p class="dashboard__number">
+          99 Today
+        </p>
+      </div>
+    </div>
 
-  
+    <div class="dashboard__card">
+      <div class="dashboard__name-block">
+        <i class="fab fa-instagram"></i>
+        <p class="dashboard__user">
+          @realnathanf
+        </p>
+      </div>
+      <h2 class="dashboard__count">
+        11k
+      </h2>
+      <p class="dashboard__followers">
+        Followers
+      </p>
+      <div class="dashboard__current-container">
+        <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+        <p class="dashboard__number">
+          1099 Today
+        </p>
+      </div>
+    </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <div class="dashboard__card">
+      <div class="dashboard__name-block">
+        <i class="fab fa-youtube-square"></i>
+        <p class="dashboard__user">
+          Nathan F.
+        </p>
+      </div>
+      <h2 class="dashboard__count">
+        8239
+      </h2>
+      <p class="dashboard__followers">
+        Subscribers
+      </p>
+      <div class="dashboard__current-container">
+        <img src="images/icon-down.svg" alt="up" class="dashboard__icon">
+        <p class="dashboard__number">
+          144 Today
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard__stats-wrapper">
+    <h2 class="dashbaord__stats-title">
+      Overview - Today
+    </h2>
+    <div class="dashboard__stats-container">
+      <div class="dashboard__card dashboard__card--sm">
+        <div class="dashboard__row">
+          <p class="dashboard__metric-name">
+            Page Views
+          </p>
+          <i class="fab fa-facebook-square"></i>
+        </div>
+        <div class="dasboard__row">
+          <h2 class="dashboard__count dashboard__count--sm">
+            87
+          </h2>
+          <div class="dasboard__current-container">
+            <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+            <p class="dashboard__number">
+              3%
+            </p>
+          </div>
+        </div>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="dashboard__card dashboard__card--sm">
+        <div class="dashboard__row">
+          <p class="dashboard__metric-name">
+            Likes
+          </p>
+          <i class="fab fa-facebook-square"></i>
+        </div>
+        <div class="dasboard__row">
+          <h2 class="dashboard__count dashboard__count--sm">
+            52
+          </h2>
+          <div class="dasboard__current-container">
+            <img src="images/icon-down.svg" alt="up" class="dashboard__icon">
+            <p class="dashboard__number">
+              2%
+            </p>
+          </div>
+        </div>
+      </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      <div class="dashboard__card dashboard__card--sm">
+        <div class="dashboard__row">
+          <p class="dashboard__metric-name">
+            Likes
+          </p>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="dasboard__row">
+          <h2 class="dashboard__count dashboard__count--sm">
+            5462
+          </h2>
+          <div class="dasboard__current-container">
+            <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+            <p class="dashboard__number">
+              5462
+            </p>
+          </div>
+        </div>
+      </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+      <div class="dashboard__card dashboard__card--sm">
+        <div class="dashboard__row">
+          <p class="dashboard__metric-name">
+            Profile Views
+          </p>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="dasboard__row">
+          <h2 class="dashboard__count dashboard__count--sm">
+            52k
+          </h2>
+          <div class="dasboard__current-container">
+            <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+            <p class="dashboard__number">
+              1375%
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="dashboard__card dashboard__card--sm">
+        <div class="dashboard__row">
+          <p class="dashboard__metric-name">
+            Retweets
+          </p>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div class="dasboard__row">
+          <h2 class="dashboard__count dashboard__count--sm">
+            117
+          </h2>
+          <div class="dasboard__current-container">
+            <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+            <p class="dashboard__number">
+              303%
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="dashboard__card dashboard__card--sm">
+        <div class="dashboard__row">
+          <p class="dashboard__metric-name">
+            Likes
+          </p>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div class="dasboard__row">
+          <h2 class="dashboard__count dashboard__count--sm">
+            507
+          </h2>
+          <div class="dasboard__current-container">
+            <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+            <p class="dashboard__number">
+              553%
+            </p>
+          </div>
+        </div>
+      </div>
 
-  Overview - Today
+      <div class="dashboard__card dashboard__card--sm">
+        <div class="dashboard__row">
+          <p class="dashboard__metric-name">
+            Likes
+          </p>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+        <div class="dasboard__row">
+          <h2 class="dashboard__count dashboard__count--sm">
+            107
+          </h2>
+          <div class="dasboard__current-container">
+            <img src="images/icon-down.svg" alt="up" class="dashboard__icon">
+            <p class="dashboard__number">
+              19%
+            </p>
+          </div>
+        </div>
+      </div>
 
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
+      <div class="dashboard__card dashboard__card--sm">
+        <div class="dashboard__row">
+          <p class="dashboard__metric-name">
+            Total Views
+          </p>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+        <div class="dasboard__row">
+          <h2 class="dashboard__count dashboard__count--sm">
+            1407
+          </h2>
+          <div class="dasboard__current-container">
+            <img src="images/icon-up.svg" alt="up" class="dashboard__icon">
+            <p class="dashboard__number">
+              12%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 </body>
 </html>
