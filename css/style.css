@@ -176,9 +176,17 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.header__container, .main {
+  max-width: 37.5rem;
+  margin: auto;
+}
+
 .header {
   background: var(--bg-body2);
   border-radius: 0px 0px 20px 20px;
+}
+
+.header__container {
   padding: 3.6rem 2.4rem 8.4rem 2.5rem;
 }
 
@@ -382,7 +390,7 @@ body {
 
 .dashboard__count--sm {
   font-size: 3.2rem;
-  line-height: 2.9rem;
+  line-height: 3.9rem;
   margin: 0;
 }
 
@@ -413,5 +421,73 @@ body {
 
 .fab {
   font-size: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .main, .header__container {
+    max-width: 144rem;
+  }
+  .header__container {
+    padding: 3.6rem 16.2rem 15.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header__heading {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    margin-bottom: 0.3rem;
+  }
+  .header__wrapper {
+    border: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 1.3rem;
+    padding: 0;
+    margin: 0;
+  }
+  .header__toggle:hover {
+    cursor: pointer;
+  }
+  .main {
+    padding: 0 16.5rem;
+    top: -108px;
+  }
+  .dashboard__social-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dashboard__card {
+    width: 100%;
+  }
+  .dashboard__card:hover {
+    cursor: pointer;
+    background: var(--bg-card-hover);
+  }
+  .dashboard__stats-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    row-gap: 2.4rem;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+  .dashboard__stats-title {
+    margin-bottom: 2.4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

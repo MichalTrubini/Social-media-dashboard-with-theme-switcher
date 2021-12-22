@@ -15,10 +15,20 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.header__container, .main {
+    max-width: 37.5rem;
+    margin: auto;
+
+}
+
 .header {
     background: var(--bg-body2);
     border-radius: 0px 0px 20px 20px;
-    padding: 3.6rem 2.4rem 8.4rem 2.5rem; 
+    
+
+    &__container {
+        padding: 3.6rem 2.4rem 8.4rem 2.5rem; 
+    }
 
     &__heading {
         font-size: 2.4rem;
@@ -189,7 +199,7 @@ body {
 
     &__count--sm {
         font-size: 3.2rem;
-        line-height: 2.9rem;
+        line-height: 3.9rem;
         margin: 0;
     }
 
@@ -220,4 +230,70 @@ body {
 
 .fab {
     font-size: 2rem;
+}
+
+@media screen and (min-width:1440px) {
+    .main, .header__container {
+        max-width: 144rem;
+    }
+
+    .header {
+        &__container {
+            padding: 3.6rem 16.2rem 15.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__heading {
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+            margin-bottom: 0.3rem;
+        }
+
+        &__wrapper {
+            border: none;
+            justify-content: flex-start;
+            gap: 1.3rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__toggle:hover {
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        padding: 0 16.5rem;
+        top: -108px;
+    }
+
+    .dashboard {
+        &__social-wrapper {
+            flex-direction: row;
+            gap: 3rem;
+            justify-content: space-between;
+        }
+
+        &__card {
+            width: 100%;
+        }
+
+        &__card:hover {
+            cursor: pointer;
+            background:var(--bg-card-hover);
+        };
+
+        &__stats-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 2.4rem;
+            column-gap: 3rem;
+        }
+
+        &__stats-title {
+            margin-bottom: 2.4rem;
+        }
+    }
 }
