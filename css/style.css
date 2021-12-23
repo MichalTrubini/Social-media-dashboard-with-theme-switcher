@@ -186,6 +186,10 @@ body {
   border-radius: 0px 0px 20px 20px;
 }
 
+.header__toggle:hover {
+  cursor: pointer;
+}
+
 .header__container {
   padding: 3.6rem 2.4rem 8.4rem 2.5rem;
 }
@@ -194,6 +198,7 @@ body {
   font-size: 2.4rem;
   line-height: 2.9rem;
   margin-bottom: 0.4rem;
+  color: var(--col-heading);
 }
 
 .header__paragraph {
@@ -217,10 +222,6 @@ body {
           align-items: center;
 }
 
-.header__input {
-  display: none;
-}
-
 .header__toggle {
   width: 48px;
   height: 24px;
@@ -229,15 +230,26 @@ body {
   border-radius: 12px;
 }
 
-.header__toggle::after {
-  content: '';
+.header__toggle-bg-dark {
+  background: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%);
+}
+
+.header__toggle-circle {
   width: 18px;
   height: 18px;
   background: #F1F3FA;
   border-radius: 100%;
   position: absolute;
+  -webkit-transition: right 300ms;
+  transition: right 300ms;
   right: 3px;
   top: 3px;
+}
+
+.header__toggle-circle-move {
+  -webkit-transition: right 300ms;
+  transition: right 300ms;
+  right: 27px;
 }
 
 .main {
